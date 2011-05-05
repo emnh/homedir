@@ -80,6 +80,7 @@ set expandtab        " always replace tab key with spaces
 autocmd BufNewFile,BufRead Makefile,Makefile.in,Makefile.am set noexpandtab
 autocmd BufNewFile,BufRead Makefile,Makefile.in,Makefile.am set softtabstop=0
 autocmd BufNewFile,BufRead *.djml set filetype=htmldjango
+autocmd BufNewFile,BufRead *.ps1 set filetype=ps1
 
 " XXX: move to .vim.*ftplugin
 autocmd FileType python set omnifunc=pythoncomplete#Complete
