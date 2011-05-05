@@ -15,7 +15,9 @@ if !exists("autocommands_loaded")
     au BufNewFile,BufRead *.go set filetype=go
 endif
 
-python import vim
+if has("python")
+    python import vim
+endif
 
 "call OnOffIndentHi()
 
@@ -37,7 +39,11 @@ set nocompatible           " enables all vim enhanced functions
 set hlsearch               " syntax highlighting on last search
 set incsearch              " instant (char by char) search
 "set ignorecase            " while searching
-set background=dark        " light colors; more readable, but uglier
+if has("gui_running")
+    set background=light   " usually white bg in gui 
+else
+    set background=dark    " light colors; more readable, but uglier
+endif
 set bs=2                   " allow all backspacing in insert mode
 syntax on                  " syntax coloring
 set wildmode=longest,list  " bash-style tab-completion
@@ -109,3 +115,7 @@ endif
 "colorscheme xterm16
 
 let g:tex_flavor='latex'
+
+if has("win32") && has("gui_running")
+    au GUIEnter * simalt ~x
+endif
