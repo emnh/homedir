@@ -33,6 +33,9 @@ imap <F5> <ESC> <F5>
 " make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
+" This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
+inoremap jj <Esc>
+
 " editing options
 set virtualedit=block      " select unwritten chars in visual-block mode
 set nocompatible           " enables all vim enhanced functions
@@ -40,7 +43,7 @@ set hlsearch               " syntax highlighting on last search
 set incsearch              " instant (char by char) search
 "set ignorecase            " while searching
 if has("gui_running")
-    set background=light   " usually white bg in gui 
+    set background=light   " usually white bg in gui
 else
     set background=dark    " light colors; more readable, but uglier
 endif
@@ -115,6 +118,9 @@ endif
 "colorscheme xterm16
 
 let g:tex_flavor='latex'
+
+"make yank/paste use clipboard by default
+let g:clipbrdDefaultReg = '+'
 
 if has("win32") && has("gui_running")
     au GUIEnter * simalt ~x
