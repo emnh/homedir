@@ -12,6 +12,7 @@ public class $ClassName {
 	(New-Object $ClassName).test()
 }
 
+# TODO: move to loadable module
 Function AppendUserPath($path) {
     if (-not (Test-Path $path)) {
         Write-Error "AppendUserPath: $path does not exist!"
@@ -28,6 +29,7 @@ Function AppendUserPath($path) {
     [Environment]::SetEnvironmentVariable("PATH", $path, "User")
 }
 
+# TODO: move to loadable module
 Function SetupEnv() {
     AppendUserPath 'C:\Program Files (x86)\Putty'
     AppendUserPath 'C:\Program Files (x86)\Vim\vim73'
