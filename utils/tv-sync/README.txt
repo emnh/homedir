@@ -1,7 +1,7 @@
-This script will make a script to download new TV series from a server,
-based on which ones you have seen already. This is determined by looking
-in a folder for TV series files and parsing the name, season and episode.
-It will by default download episodes from series you have seen one episode
+makeQueue.sh will make a list of TV series to download from a server, based on
+which ones you have seen already. This is determined by looking in a folder
+for TV series files and parsing the name, season and episode.  It will by
+default download episodes from series you have seen at least one episode
 from before and that are newer than the latest you have seen before.
 
 Usage:
