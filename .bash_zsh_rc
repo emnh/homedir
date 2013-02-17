@@ -1,0 +1,88 @@
+#!/bin/bash
+# vim: set filetype=zsh
+# 
+[[ $PATH != *$HOME/bin:* ]] && PATH=$HOME/bin:$PATH
+[[ $PATH != *:/sbin* ]] && PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
+[[ $PATH != *:/usr/local/bin* ]] && PATH=$PATH:/usr/local/bin
+[[ $PATH != *:/media/data/software/golang/bin/* ]] && PATH=$PATH:/media/data/software/golang/bin
+
+[ -z "$PYTHONPATH" ] && PYTHONPATH=.
+[[ $PYTHONPATH != *$HOME/devel ]] && PYTHONPATH=$PYTHONPATH:~/devel
+[[ $PYTHONPATH != *$HOME/devel* ]] && PYTHONPATH=$PYTHONPATH:~/devel
+[[ $PYTHONPATH != *$HOME/devel/nmuse* ]] && PYTHONPATH=$PYTHONPATH:~/devel/nmuse
+
+export PATH PYTHONPATH 
+
+export \
+_JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd" \
+SCALA_HOME=/media/data/software/scala-2.7.7.final \
+JDK_HOME=/usr/lib/jvm/jdk1.7.0 \
+EDITOR=vim \
+HISTCONTROL="erasedups" \
+HISTIGNORE="&:ls:[bf]g:exit" \
+HISTSIZE=1000000 \
+HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S " \
+IPOD_MOUNTPOINT=/mnt/ipod \
+KDE_IS_PRELINKED=true \
+PAGER='less -isR' \
+PYTHONSTARTUP=~/.pythonrc \
+JYTHON_OPTS="-i $HOME/.jythonrc" \
+VIMINIT=":source $HOME/.vimrc" \
+CVS_RSH=ssh \
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}\007"' \
+TZ='Europe/Oslo' \
+CHROMIUM_USER_FLAGS="--enable-sync --enable-extensions --always-enable-dev-tools" \
+DJANGO_SETTINGS_MODULE=lifelog.settings \
+HOSTNAME=$HOST
+#LD_ASSUME_KERNEL=2.4.1 # MATLAB workaround, gives trouble on fedora
+
+locale=en_US.UTF-8
+export LANG="$locale" \
+LC_CTYPE="$locale" \
+LC_NUMERIC="$locale" \
+LC_TIME="$locale" \
+LC_COLLATE="$locale" \
+LC_MONETARY="$locale" \
+LC_MESSAGES="$locale" \
+LC_PAPER="$locale" \
+LC_NAME="$locale" \
+LC_ADDRESS="$locale" \
+LC_TELEPHONE="$locale" \
+LC_MEASUREMENT="$locale" \
+LC_IDENTIFICATION="$locale" \
+LANGUAGE="en_US"
+
+if [ "$HOSTNAME" = "achronisul" ]; then
+    export all_proxy="http://localhost:8118/"
+fi
+
+# ls colors
+if [ -x /usr/bin/dircolors ]; then
+    eval `dircolors -b <(cat ~/.dircolors ~/devel/dircolors/random_dircolors \
+    ~/devel/dircolors/tuned_dircolors)`
+    # assume grep has colors if dircolors exists
+    export GREP_OPTIONS='--color=auto'
+
+    # assume ls has colors if dircolors exists
+    # used in alias below
+    #if ! /bin/ls -d --color / 2>&1 | fgrep 'illegal option' &> /dev/null; then
+    LSCOLOR=--color
+    #fi
+fi
+
+##### ALIASES #####
+
+alias ls="ls $LSCOLOR -xCF"
+alias vt='openvt -s -l -- /bin/bash --login'
+alias less='less -isR'
+alias mcd='cd'   # cd without tab completion
+alias mv='mv -i'
+alias rpm='rpm --nodigest --nosignature'
+alias ldapvi='ldapvi -Z -D cn=admin,dc=kvarteret,dc=no'
+alias asc='asoundconf set-default-card'
+# rss2email reads config.py from cwd
+alias r2e='cd ~/.rss2email/; r2e'
+alias konsolekalendar='konsolekalendar --file ~/.calendar.ics'
+alias vi=vim
+alias 'ps?'='ps ax | grep '
+
