@@ -15,6 +15,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+mkdir -p ~/.zsh
 HISTFILE=~/.zsh/history
 HISTSIZE=10000000
 SAVEHIST=10000000
