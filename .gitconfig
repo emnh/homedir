@@ -1,0 +1,13 @@
+[user]
+	name = Eivind Magnus Hvidevold
+	email = hvidevold@gmail.com
+[color]
+	ui = auto
+	branch = auto
+	status = auto
+	diff = auto
+[instaweb]
+	local = true
+	httpd = lighttpd -f
+	browser = firefox
+	port = 6819
