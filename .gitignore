@@ -262,8 +262,20 @@
 /.yed3
 /.zgrviewer
 
+/.compiz
+/.gtk-bookmarks
+/.gtkrc-2.0
+/.heroku
+/.lein
+/.mission-control
+/.netrc
+/.npm
+/.xsession-errors.old
+/.zcompdump
+
 # Real data
 /Desktop
+/Downloads
 /altibox
 /linksys-wrt54g-v7.0
 /homestuff
@@ -330,6 +342,13 @@
 /.vnc
 /.xdvirc
 /.xmms
+
+# ubuntu VM home dir
+/dev
+/gdrive
+/github
+/homedir-alexis
+/host
 
 # rasmus home dir
 /cvsdirs
