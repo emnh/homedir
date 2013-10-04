@@ -1,0 +1,8 @@
+# Write your default config options here!
+
+cache = 32768
+#cache = 4096
+
+ao = alsa #:device=hw=0
+# monitoraspect = 4:3
+# ao = oss
