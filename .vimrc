@@ -4,6 +4,14 @@
 "fixdel
 "endif
 
+" vim package manager vundle
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'python.vim'
+
 " https://github.com/tpope/vim-pathogen
 " enables bundles in .vim/bundle
 execute pathogen#infect()
@@ -135,4 +143,4 @@ endif
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let vimclojure#WantNailgun = 1
-let vimclojure#NailgunClient = "/usr/bin/ng-nailgun"
+let vimclojure#SplitPos = "right" 
