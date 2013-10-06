@@ -1,5 +1,5 @@
 git filter-branch --commit-filter '
-        if [ "$GIT_COMMITTER_NAME" = "root" ];
+        if [ "$GIT_COMMITTER_NAME" = "ubuntu" ];
         then
                 GIT_COMMITTER_NAME="Eivind Magnus Hvidevold";
                 GIT_AUTHOR_NAME="Eivind Magnus Hvidevold";
