@@ -11,3 +11,5 @@
 	httpd = lighttpd -f
 	browser = firefox
 	port = 6819
+[push]
+	default = simple
