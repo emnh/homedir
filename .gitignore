@@ -45,6 +45,11 @@
 # tcsh?
 /.history
 
+# SSH
+# Config should be symlinked to dropbox.
+# Keys can be regenerated for each machine.
+/.ssh
+
 # Remove in the future
 #/.ipython
 
@@ -349,6 +354,16 @@
 /github
 /homedir-alexis
 /host
+/.PyCharm30
+/.dropbox-dist
+/.dropbox
+/.gmvault
+/.pycharm_helpers
+/Dropbox/
+/d
+/gmvault-db/
+/i
+/pycharm-community-3.0
 
 # rasmus home dir
 /cvsdirs
