@@ -4,6 +4,10 @@
 "fixdel
 "endif
 
+" https://github.com/tpope/vim-pathogen
+" enables bundles in .vim/bundle
+execute pathogen#infect()
+
 " examples
 abbr myabbr expanded text
 
@@ -126,3 +130,9 @@ let g:clipbrdDefaultReg = '+'
 if has("win32") && has("gui_running")
     au GUIEnter * simalt ~x
 endif
+
+" vimclojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = "/usr/bin/ng-nailgun"
