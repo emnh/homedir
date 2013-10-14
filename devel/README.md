@@ -10,6 +10,7 @@
  - Load github project.
  - Debugging support.
  - Code analysis.
+ - All in one VM: V8 + JSIL + MONO IKVM.NET.
 
 ## Web platform axiom
 
@@ -28,12 +29,15 @@ Advanced and not so advanced development features and examples of support.
 - Debugging snapshots and reverse exploration
  - Support: [GDB checkpoint](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
  - Support: [GDB reverse exploration](http://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)
+ - Support: [Java : Chronon Time Travelling](http://chrononsystems.com/products/chronon-time-travelling-debugger) (Commercial)
+ - Support: [JavaScript: Trace GL](https://trace.gl/index.html) (Commercial)
  - Partial support: [Intellitrace](http://msdn.microsoft.com/en-us/magazine/ee336126.aspx). Doesn't look very detailed.
  - Support: Snapshots with any debugger in a virtual machine
 - Customizable debugger
  - Support: [Pharo](http://www.pharo-project.org/home)
 - Live debugging and reload
  - Support: Clojure IDEs: VimClojure, LightTable, live-cljs
+ - Support: Wisp (ClojureScript in JS) (http://jeditoolkit.com/try-wisp/)
  - Support: Javascript, debuggers like Chrome dev tools
  - Support: [Pharo](http://www.pharo-project.org/home)
 - Full static type inference
@@ -47,6 +51,7 @@ Advanced and not so advanced development features and examples of support.
  - Can be implemented as test cases with adequate visualization of results, together with browseable serialization of code execution and code coverage
 - Zero environment/IDE setup cost
  - JSBin
+ - [Cloud 9 IDE](https://c9.io/): Node.js / Python / Ruby / PHP
  - Cloud hosting, such as Heroku projects with plug-in reload from GitHub
 
 # Compiler as a service / Try it online
@@ -57,17 +62,19 @@ Advanced and not so advanced development features and examples of support.
  - [Try Haskell](http://tryhaskell.org/)
  - [Try Linux in x86 JS emulator](http://bellard.org/jslinux/index.html)
  
-# Interop classification
+# Language Interop 
 
-- Native, JVM, .NET VM
-- Boundary: JNI, HTTP, AJAX, JSON, Python extension methods, Python
-- (Transcompiler)[http://en.wikipedia.org/wiki/Transcompiler]: Java,C#,Clojure -> JavaScript etc
-- Shared VM: Python / Jython / IronPython. Clojure on JVM, Clojure on .NET, ClojureScript.
-- [JSIL: .NET to JavaScript](http://jsil.org)
-- [StackOverflow: JS JVM implementation](http://stackoverflow.com/questions/12316557/javascript-jvm-implementation)
-- [Doppio: JVM to JavaScript](http://plasma-umass.github.io/doppio/about.html)
-- [x86 JS emulator](http://bellard.org/jslinux/index.html) and [source code](https://github.com/levskaya/jslinux-deobfuscated).
-- [FunScript: F# JS](http://funscript.info/)
+ - Native, JVM, .NET VM
+ - Boundary: JNI, HTTP, AJAX, JSON, Python extension methods, Python
+ - (Transcompiler)[http://en.wikipedia.org/wiki/Transcompiler]: Java,C#,Clojure -> JavaScript etc
+ - Shared VM: Python / Jython / IronPython. Clojure on JVM, Clojure on .NET, ClojureScript.
+ - [JSIL: .NET to JavaScript](http://jsil.org)
+ - [StackOverflow: JS JVM implementation](http://stackoverflow.com/questions/12316557/javascript-jvm-implementation)
+ - [Doppio: JVM to JavaScript](http://plasma-umass.github.io/doppio/about.html)
+ - [x86 JS emulator](http://bellard.org/jslinux/index.html) and [source code](https://github.com/levskaya/jslinux-deobfuscated).
+ - [FunScript: F# JS](http://funscript.info/)
+ - [WebSharper: F# JS and Web Framework](http://websharper.com/home)
+ - [Skulpt: Python JS implementation](http://www.skulpt.org/)
   
 # Problems
 
