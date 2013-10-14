@@ -1,8 +1,10 @@
 #!/bin/sh
 setxkbmap -model pc105 -layout no
 xset b 0
-setxkbmap -layout us,no -option grp:caps_toggle -option grp_led:scroll
-synclient TouchpadOff=1
+#setxkbmap -layout us,no -option grp:caps_toggle -option grp_led:scroll
+#setxkbmap -layout no,us -option grp_led:scroll
+setxkbmap -layout no -option grp_led:scroll
+#synclient TouchpadOff=1
 #echo `date '+%Y-%m-%d %H:%M:%S'` $HOSTNAME >> .hostlog
 #konsole &
 #chromium-browser &
