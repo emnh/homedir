@@ -8,15 +8,21 @@ Advanced and not so advanced development features and examples of support.
  - Closures, lambda
   - Support: Clojure, Java 8, C#, JavaScript
  - Debugging snapshots and reverse exploration
-  - Support: (GDB)[https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html]
+  - Support: [GDB](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
  - Customizable debugger
-  - Support: (Pharo)[http://www.pharo-project.org/home]
+  - Support: [Pharo](http://www.pharo-project.org/home)
  - Live debugging and reload
-  - Support: Clojure, IDEs: VimClojure, LightTable
-  - Support: Javascript debuggers like Chrome dev tools
-  - Support: (Pharo)[http://www.pharo-project.org/home]
+  - Support: Clojure IDEs: VimClojure, LightTable, live-cljs
+  - Support: Javascript, debuggers like Chrome dev tools
+  - Support: [Pharo](http://www.pharo-project.org/home)
  - Full static type inference
   - Support: F#, ML, Haskell
+ - Custom debugger visualization
+  - Support: ?
+ - Literal programming
+  - More of a style than support, but easier in concise languages like Clojure and Python
+  - The intent is to be able to read/browse the program linearly from A to Z through a series of examples and docs, just like a book
+  - Can be implemented as test cases with adequate visualization of results, together with browseable serialization of code execution and code coverage
  
 # Interop classification
 
