@@ -23,6 +23,9 @@ Advanced and not so advanced development features and examples of support.
   - More of a style than support, but easier in concise languages like Clojure and Python
   - The intent is to be able to read/browse the program linearly from A to Z through a series of examples and docs, just like a book
   - Can be implemented as test cases with adequate visualization of results, together with browseable serialization of code execution and code coverage
+ - Zero environment/IDE setup cost
+  - JSBin
+  - Cloud hosting, such as Heroku projects with plug-in reload from GitHub
  
 # Interop classification
 
@@ -47,7 +50,7 @@ Advanced and not so advanced development features and examples of support.
    - ClojureScript
     - Less mature in-browser debugging than pure JavaScript
    - To-JavaScript compilers
-    - CoffeeScript solutions?
-    - Solution: One-to-one debugging with line numbers
-    - Solution: Pretty-print compilation
+     - CoffeeScript solutions?
+     - Solution: One-to-one debugging with line numbers
+     - Solution: Pretty-print compilation
     
