@@ -1,3 +1,21 @@
+# Project idea
+
+## Polyglobetrotter
+ - Heroku maximum polyglot template: C, Java, C#, F#, Clojure, Python.
+ - Front page showing unit test results.
+   - Calling from one language to another, using various cross-language boundaries.
+   - Sharing/converting data.
+   - Use JSON as common object format, or compilation to "literals".
+ - Integrated JSBin, fork it, use CodeMirror as editor.
+ - Load github project.
+ - Debugging support.
+ - Code analysis.
+
+## Web platform axiom
+
+The browser OS. Everything compiles to JavaScript. V8 is a good VM.
+If JS doesn't cut it, hand-optimized C extensions are the solution.
+
 # Development features
 
 Advanced and not so advanced development features and examples of support.
@@ -22,23 +40,34 @@ Advanced and not so advanced development features and examples of support.
  - Support: F#, ML, Haskell
 - Custom debugger visualization
  - Support: ?
-- Literal programming
+- Literate programming
+ - (CoffeeScript example)[https://gist.github.com/jashkenas/3fc3c1a8b1009c00d9df]
  - More of a style than support, but easier in concise languages like Clojure and Python
  - The intent is to be able to read/browse the program linearly from A to Z through a series of examples and docs, just like a book
  - Can be implemented as test cases with adequate visualization of results, together with browseable serialization of code execution and code coverage
 - Zero environment/IDE setup cost
  - JSBin
  - Cloud hosting, such as Heroku projects with plug-in reload from GitHub
+
+# Compiler as a service / Try it online
+ - [IDEOne Multi-language](http://ideone.com/)
+ - [CompileOnline Multi-language](http://www.compileonline.com/)
+ - [Himera ClojureScript](http://himera.herokuapp.com)
+ - [Try Clojure](http://tryclj.com/)
+ - [Try Haskell](http://tryhaskell.org/)
+ - [Try Linux in x86 JS emulator](http://bellard.org/jslinux/index.html)
  
 # Interop classification
 
 - Native, JVM, .NET VM
 - Boundary: JNI, HTTP, AJAX, JSON, Python extension methods, Python
-- Multitarget:
- - Compilers for Java to JavaScript
- - C# to JavaScript etc
- - Clojure / ClojureScript
- - Python / YJy
+- (Transcompiler)[http://en.wikipedia.org/wiki/Transcompiler]: Java,C#,Clojure -> JavaScript etc
+- Shared VM: Python / Jython / IronPython. Clojure on JVM, Clojure on .NET, ClojureScript.
+- [JSIL: .NET to JavaScript](http://jsil.org)
+- [StackOverflow: JS JVM implementation](http://stackoverflow.com/questions/12316557/javascript-jvm-implementation)
+- [Doppio: JVM to JavaScript](http://plasma-umass.github.io/doppio/about.html)
+- [x86 JS emulator](http://bellard.org/jslinux/index.html) and [source code](https://github.com/levskaya/jslinux-deobfuscated).
+- [FunScript: F# JS](http://funscript.info/)
   
 # Problems
 
@@ -52,3 +81,4 @@ Advanced and not so advanced development features and examples of support.
  - Debug opacity
   - To-JavaScript compilers: [JS source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/). Pretty-print compilation.
   - Code generation: Debugging and tracing back to code generator. Should be okay manually for isolated parts.
+  - [Intellij IDEA File Watchers / Transpilers](https://www.jetbrains.com/idea/webhelp/using-file-watchers.html)
