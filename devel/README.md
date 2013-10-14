@@ -54,7 +54,7 @@ Advanced and not so advanced development features and examples of support.
    - ClojureScript
     - Less mature in-browser debugging than pure JavaScript
    - To-JavaScript compilers
-     - CoffeeScript solutions?
-     - Solution: One-to-one debugging with line numbers
-     - Solution: Pretty-print compilation
+    - CoffeeScript solutions?
+    - Solution: One-to-one debugging with line numbers
+    - Solution: Pretty-print compilation
     
