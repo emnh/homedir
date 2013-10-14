@@ -4,14 +4,14 @@ Advanced and not so advanced development features and examples of support.
 
  - Functional style
   - Map, filter, iter
-   - Support: Any lisp, Java 8, Python 3, C#
+    - Support: Any lisp, Java 8, Python 3, C#
  - Closures, lambda
   - Support: Clojure, Java 8, C#, JavaScript
  - Debugging snapshots and reverse exploration
   - Support: [GDB checkpoint](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
   - Support: [GDB reverse exploration](http://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)
   - Partial support: [Intellitrace](http://msdn.microsoft.com/en-us/magazine/ee336126.aspx)
-   - Doesn't look very detailed.
+    - Doesn't look very detailed.
   - Support: Snapshots with any debugger in a virtual machine
  - Customizable debugger
   - Support: [Pharo](http://www.pharo-project.org/home)
@@ -44,18 +44,18 @@ Advanced and not so advanced development features and examples of support.
 
  - Type declaration ugliness
   - C (pointers and shit, memory allocation)
-   - Alleviated by GC library
+    - Alleviated by GC library
   - Java
-   - Generics redundancy
+    - Generics redundancy
  - IDE robustness, setup, debugging, toolchain support
   - Experimental/non-mainstream languages
   - Clojure is improving
-   - Live reload helps in VimClojure and LightTable
-   - Debugging with tracing and debug macros
+    - Live reload helps in VimClojure and LightTable
+    - Debugging with tracing and debug macros
   - ClojureScript
-   - Less mature in-browser debugging than pure JavaScript
+    - Less mature in-browser debugging than pure JavaScript
   - To-JavaScript compilers
-   - CoffeeScript solutions?
-   - Solution: One-to-one debugging with line numbers
-   - Solution: Pretty-print compilation
+    - CoffeeScript solutions?
+    - Solution: One-to-one debugging with line numbers
+    - Solution: Pretty-print compilation
     
