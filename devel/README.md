@@ -1,5 +1,4 @@
-
-= Development features
+# Development features
 
 Advanced and not so advanced development features and examples of support.
 
@@ -19,7 +18,7 @@ Advanced and not so advanced development features and examples of support.
  - Full static type inference
   - Support: F#, ML, Haskell
  
-= Interop classification
+# Interop classification
 
  - Native, JVM, .NET VM
  - Boundary: JNI, HTTP, AJAX, JSON, Python extension methods
@@ -37,11 +36,12 @@ Advanced and not so advanced development features and examples of support.
  - IDE robustness, setup, debugging, toolchain support
    - Experimental/non-mainstream languages
    - Clojure is improving
-    - Debugging
+    - Live reload helps in VimClojure and LightTable
+    - Debugging with tracing and debug macros
    - ClojureScript
-    - Less mature debugging than pure JavaScript
+    - Less mature in-browser debugging than pure JavaScript
    - To-JavaScript compilers
-    - CoffeeScript_=??
+    - CoffeeScript solutions?
     - Solution: One-to-one debugging with line numbers
     - Solution: Pretty-print compilation
     
