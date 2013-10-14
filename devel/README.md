@@ -10,6 +10,9 @@ Advanced and not so advanced development features and examples of support.
  - Debugging snapshots and reverse exploration
   - Support: [GDB checkpoint](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
   - Support: [GDB reverse exploration](http://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)
+  - Partial support: [Intellitrace](http://msdn.microsoft.com/en-us/magazine/ee336126.aspx)
+   - Doesn't look very detailed.
+  - Support: Snapshots with any debugger in a virtual machine
  - Customizable debugger
   - Support: [Pharo](http://www.pharo-project.org/home)
  - Live debugging and reload
