@@ -41,20 +41,21 @@ Advanced and not so advanced development features and examples of support.
   - Clojure / ClojureScript
   
 # Problems
+
  - Type declaration ugliness
   - C (pointers and shit, memory allocation)
    - Alleviated by GC library
   - Java
    - Generics redundancy
  - IDE robustness, setup, debugging, toolchain support
-   - Experimental/non-mainstream languages
-   - Clojure is improving
-    - Live reload helps in VimClojure and LightTable
-    - Debugging with tracing and debug macros
-   - ClojureScript
-    - Less mature in-browser debugging than pure JavaScript
-   - To-JavaScript compilers
-    - CoffeeScript solutions?
-    - Solution: One-to-one debugging with line numbers
-    - Solution: Pretty-print compilation
+  - Experimental/non-mainstream languages
+  - Clojure is improving
+   - Live reload helps in VimClojure and LightTable
+   - Debugging with tracing and debug macros
+  - ClojureScript
+   - Less mature in-browser debugging than pure JavaScript
+  - To-JavaScript compilers
+   - CoffeeScript solutions?
+   - Solution: One-to-one debugging with line numbers
+   - Solution: Pretty-print compilation
     
