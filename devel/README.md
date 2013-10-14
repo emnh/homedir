@@ -40,6 +40,7 @@ Advanced and not so advanced development features and examples of support.
  - Support: Wisp (ClojureScript in JS) (http://jeditoolkit.com/try-wisp/)
  - Support: Javascript, debuggers like Chrome dev tools
  - Support: [Pharo](http://www.pharo-project.org/home)
+ - Support: [cljs in cljs](http://www.clojurescript.net/)
 - Full static type inference
  - Support: F#, ML, Haskell
 - Custom debugger visualization
@@ -75,6 +76,7 @@ Advanced and not so advanced development features and examples of support.
  - [FunScript: F# JS](http://funscript.info/)
  - [WebSharper: F# JS and Web Framework](http://websharper.com/home)
  - [Skulpt: Python JS implementation](http://www.skulpt.org/)
+ - [List of languages that compile to JS](https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS)
   
 # Problems
 
@@ -89,3 +91,6 @@ Advanced and not so advanced development features and examples of support.
   - To-JavaScript compilers: [JS source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/). Pretty-print compilation.
   - Code generation: Debugging and tracing back to code generator. Should be okay manually for isolated parts.
   - [Intellij IDEA File Watchers / Transpilers](https://www.jetbrains.com/idea/webhelp/using-file-watchers.html)
+
+# Visual programming
+ - [Meemo: Image pipe visualization](http://meemoo.org/iframework/#gist/3124854) Useful for image/animation construction. Especially filter applications. And creating music.
