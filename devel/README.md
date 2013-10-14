@@ -33,7 +33,7 @@ Advanced and not so advanced development features and examples of support.
   - C# to JavaScript etc
   - Clojure / ClojureScript
   
-= Problems
+# Problems
  - Type declaration ugliness
   - C (pointers and shit, memory allocation)
    - Alleviated by GC library
