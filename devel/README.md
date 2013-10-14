@@ -33,11 +33,12 @@ Advanced and not so advanced development features and examples of support.
 # Interop classification
 
 - Native, JVM, .NET VM
-- Boundary: JNI, HTTP, AJAX, JSON, Python extension methods
+- Boundary: JNI, HTTP, AJAX, JSON, Python extension methods, Python
 - Multitarget:
  - Compilers for Java to JavaScript
  - C# to JavaScript etc
  - Clojure / ClojureScript
+ - Python / YJy
   
 # Problems
 
