@@ -49,5 +49,5 @@ Advanced and not so advanced development features and examples of support.
   - Clojure: Improving. Live reload helps in VimClojure and LightTable. Debugging with tracing and debug macros.
   - ClojureScript: Less mature in-browser debugging than pure JavaScript.
  - Debug opacity
-  - To-JavaScript compilers: JS source maps()assdsdhttp://www.html5rocks.com/en/tutorials/developertools/sourcemaps/9), Pretty-print compilation.
+  - To-JavaScript compilers: [JS source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/). Pretty-print compilation.
   - Code generation: Debugging and tracing back to code generator. Should be okay manually for isolated parts.
