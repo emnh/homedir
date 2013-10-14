@@ -8,7 +8,8 @@ Advanced and not so advanced development features and examples of support.
  - Closures, lambda
   - Support: Clojure, Java 8, C#, JavaScript
  - Debugging snapshots and reverse exploration
-  - Support: [GDB](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
+  - Support: [GDB checkpoint](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
+  - Support: [GDB reverse exploration](http://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)
  - Customizable debugger
   - Support: [Pharo](http://www.pharo-project.org/home)
  - Live debugging and reload
