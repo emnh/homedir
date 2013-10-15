@@ -53,7 +53,8 @@ set virtualedit=block      " select unwritten chars in visual-block mode
 set nocompatible           " enables all vim enhanced functions
 set hlsearch               " syntax highlighting on last search
 set incsearch              " instant (char by char) search
-"set ignorecase            " while searching
+set ignorecase             " while searching
+set smartcase              " make searches case-insensitive except when you include upper-case characters
 if has("gui_running")
     set background=light   " usually white bg in gui
 else
@@ -144,3 +145,19 @@ let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let vimclojure#WantNailgun = 1
 let vimclojure#SplitPos = "right" 
+
+" Regarding Vim’s command line, its defaults make it behave very unlike a
+" modern command line. If you’re used to Emacs-style movement keys on your
+" Bash or Zsh command line (using Ctrl-A and Ctrl-E and the like) the you
+" might want to make Vim act the same way:
+:cnoremap <C-a>  <Home>
+:cnoremap <C-b>  <Left>
+:cnoremap <C-f>  <Right>
+:cnoremap <C-d>  <Delete>
+:cnoremap <M-b>  <S-Left>
+:cnoremap <M-f>  <S-Right>
+:cnoremap <M-d>  <S-right><Delete>
+:cnoremap <Esc>b <S-Left>
+:cnoremap <Esc>f <S-Right>
+:cnoremap <Esc>d <S-right><Delete>
+:cnoremap <C-g>  <C-c>
