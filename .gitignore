@@ -364,6 +364,8 @@
 /gmvault-db/
 /i
 /pycharm-community-3.0
+/.bundler
+/.vim/bundle/.vundle
 
 # rasmus home dir
 /cvsdirs
