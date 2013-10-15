@@ -17,13 +17,11 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-"Bundle 'taglist.vim'
 
 " set rtp+=~/.vim/bundle/neobundle.vim/
 " call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 " NeoBundleFetch 'Shougo/neobundle.vim'
-" NeoBundle 'taglist.vim'
 " NeoBundleCheck
 
 " https://github.com/tpope/vim-pathogen
