@@ -17,7 +17,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'python.vim'
 
 " https://github.com/tpope/vim-pathogen
 " enables bundles in .vim/bundle
