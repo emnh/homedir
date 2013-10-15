@@ -1,0 +1,56 @@
+cifs
+cifs-utils
+clang
+coffeescript
+express
+flask
+geeqie
+gh
+ghc
+github-backup
+gnome3-shell
+gnome-shell
+heroku heroku-toolbelt
+imv
+ipython
+ipythonl
+kde
+kdiff3 meld
+kompare
+kubuntu-desktop
+lighttable
+linux-headers
+linux-headers-`uname -r`
+linux-headers-`uname -r`-generic
+maven
+mdadm
+metacity
+mplayer
+nailgun
+nmb
+node-express
+nodejs
+npm
+openssh-server
+p7zip
+pygame
+python-flask
+python-markdown
+python-matplotlib
+python-pip
+python-pygame
+python-pygments
+python-requests
+python-zmq
+pyzmq
+renameutils
+reptyr
+ruby-dev
+ruby-devs
+samba
+samba4
+screen
+sshd
+subversion
+svn
+vim-gnome
