@@ -4,6 +4,13 @@
 "fixdel
 "endif
 
+" 256 colors
+if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal" || $TERM
+      set t_Co=256
+endif
+
+" many good tips from http://statico.github.io/vim.html
+
 " vim package manager vundle
 
 set rtp+=~/.vim/bundle/vundle/
@@ -15,6 +22,9 @@ Bundle 'python.vim'
 " https://github.com/tpope/vim-pathogen
 " enables bundles in .vim/bundle
 execute pathogen#infect()
+
+" Powerline status line
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " examples
 abbr myabbr expanded text
@@ -41,6 +51,8 @@ map <F5> : w! <CR> : make <CR>
 imap <F5> <ESC> <F5> 
 "map <F5> : ! nc -w1 192.168.126.9 12345 <CR> u
 "map <F6> : r ! nc -l -p 12345 <CR>
+
+:nmap \e :NERDTreeToggle<CR> " NERD TREE
 
 " make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
