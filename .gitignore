@@ -365,7 +365,11 @@
 /i
 /pycharm-community-3.0
 /.bundler
+
+# looks like a cache
 /.vim/bundle/.vundle
+/.vim/bundle/.neobundle
+# managed by vundle
 
 # rasmus home dir
 /cvsdirs

@@ -19,3 +19,12 @@
 [submodule ".vim/bundle/SimpylFold"]
 	path = .vim/bundle/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule "/home/emh/.vim/bundle/neobundle.vim"]
+	path = .vim/bundle/neobundle.vim
+	url = git://github.com/Shougo/neobundle.vim
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule ".vim/bundle/taglist.vim"]
+	path = .vim/bundle/taglist.vim
+	url = https://github.com/emnh/taglist.vim

@@ -17,6 +17,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+"Bundle 'taglist.vim'
+
+" set rtp+=~/.vim/bundle/neobundle.vim/
+" call neobundle#rc(expand('~/.vim/bundle/'))
+" Let NeoBundle manage NeoBundle
+" NeoBundleFetch 'Shougo/neobundle.vim'
+" NeoBundle 'taglist.vim'
+" NeoBundleCheck
 
 " https://github.com/tpope/vim-pathogen
 " enables bundles in .vim/bundle
@@ -34,6 +42,10 @@ if !exists("autocommands_loaded")
     au BufNewFile,BufRead *.tex set textwidth=80
     au BufNewFile,BufRead *.txt set filetype=text
     au BufNewFile,BufRead *.go set filetype=go
+
+    au BufNewFile,BufRead *.py TagbarOpen
+    au BufNewFile,BufRead *.java TagbarOpen
+    au BufNewFile,BufRead *.clj TagbarOpen
 endif
 
 if has("python")
@@ -52,6 +64,7 @@ imap <F5> <ESC> <F5>
 "map <F6> : r ! nc -l -p 12345 <CR>
 
 :nmap \e :NERDTreeToggle<CR> " NERD TREE
+:nmap \t :Tlist<CR>          " taglist
 
 " make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
@@ -176,3 +189,6 @@ let vimclojure#SplitPos = "right"
 " code folding
 nnoremap <space> za
 vnoremap <space> zf
+
+" taglist clojure settings
+let tlist_clojure_settings = 'lisp;f:function'
