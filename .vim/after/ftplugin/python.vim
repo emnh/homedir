@@ -6,3 +6,6 @@ setlocal keywordprg=pydoc2
 syn match IncSearch "\t"    " highlight bad tabbing
 
 set cindent "makes indenting comments work
+
+"set foldmethod=indent
+"set foldnestmax=2

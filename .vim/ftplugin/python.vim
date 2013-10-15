@@ -1,7 +1,7 @@
 " drop down autocompletion list when typing .
 " imap . .<C-N><C-P>
 
-compiler pylint
+" compiler pylint
 
 python << EOF
 def evalCurrentLine():
