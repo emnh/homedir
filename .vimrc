@@ -168,6 +168,7 @@ let g:vimclojure#ParenRainbow = 1
 let vimclojure#WantNailgun = 1
 let vimclojure#SplitPos = "right" 
 
+" from http://statico.github.io/vim.html
 " Regarding Vim’s command line, its defaults make it behave very unlike a
 " modern command line. If you’re used to Emacs-style movement keys on your
 " Bash or Zsh command line (using Ctrl-A and Ctrl-E and the like) the you
@@ -190,3 +191,13 @@ vnoremap <space> zf
 
 " taglist clojure settings
 let tlist_clojure_settings = 'lisp;f:function'
+
+" http://statico.github.io/vim.html
+" ctrlp options
+" :let g:ctrlp_map = '<Leader>t'
+:let g:ctrlp_match_window_bottom = 0
+:let g:ctrlp_match_window_reversed = 0
+:let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+:let g:ctrlp_working_path_mode = 0
+:let g:ctrlp_dotfiles = 0
+:let g:ctrlp_switch_buffer = 0
