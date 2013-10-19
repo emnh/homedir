@@ -77,6 +77,12 @@ Advanced and not so advanced development features and examples of support.
  - [WebSharper: F# JS and Web Framework](http://websharper.com/home)
  - [Skulpt: Python JS implementation](http://www.skulpt.org/)
  - [List of languages that compile to JS](https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS)
+
+# JS Debugging / Visualization
+ - [Esprima: JS Parser in JS](htps://github.com/ariya/esprima)
+ - [MetaJS: JS debugger in JS](https://github.com/int3/metajs), [Demo](http://int3.github.io/metajs/#)
+ - [Choc: JS Interactive learning tool](https://github.com/fullstackio/choc)
+ - [JS WebGL tracer (not free)](https://trace.gl/)
   
 # Problems
 
