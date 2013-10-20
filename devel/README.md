@@ -36,11 +36,13 @@ Advanced and not so advanced development features and examples of support.
 - Customizable debugger
  - Support: [Pharo](http://www.pharo-project.org/home)
 - Live debugging and reload
- - Support: Clojure IDEs: VimClojure, LightTable, live-cljs
- - Support: Wisp (ClojureScript in JS) (http://jeditoolkit.com/try-wisp/)
- - Support: Javascript, debuggers like Chrome dev tools
- - Support: [Pharo](http://www.pharo-project.org/home)
- - Support: [cljs in cljs](http://www.clojurescript.net/)
+ - Clojure IDEs: VimClojure, LightTable, live-cljs
+ - Wisp (ClojureScript in JS) (http://jeditoolkit.com/try-wisp/)
+ - Javascript, debuggers like Chrome dev tools
+ - [Pharo](http://www.pharo-project.org/home)
+ - [cljs in cljs](http://www.clojurescript.net/)
+ - [YinYang](http://research.microsoft.com/en-us/people/smcdirm/liveprogramming.aspx?iedz00)
+ - [Choc: JS Interactive learning tool](https://github.com/fullstackio/choc)
 - Full static type inference
  - Support: F#, ML, Haskell
 - Custom debugger visualization
@@ -81,7 +83,6 @@ Advanced and not so advanced development features and examples of support.
 # JS Debugging / Visualization
  - [Esprima: JS Parser in JS](htps://github.com/ariya/esprima)
  - [MetaJS: JS debugger in JS](https://github.com/int3/metajs), [Demo](http://int3.github.io/metajs/#)
- - [Choc: JS Interactive learning tool](https://github.com/fullstackio/choc)
  - [JS WebGL tracer (not free)](https://trace.gl/)
   
 # Problems
