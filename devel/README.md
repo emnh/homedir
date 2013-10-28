@@ -1,4 +1,4 @@
-# Project idea
+# Project ideas
 
 ## Polyglobetrotter
  - Heroku maximum polyglot template: C, Java, C#, F#, Clojure, Python.
@@ -16,6 +16,9 @@
 
 The browser OS. Everything compiles to JavaScript. V8 is a good VM.
 If JS doesn't cut it, hand-optimized C extensions are the solution.
+
+GitHub centric JSBin: Split screen 2 ways, one IFrame for GitHub and one for http://bl.ocks.org to view the Gist.
+ - http://bl.ocks.org/
 
 # Development features
 
