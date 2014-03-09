@@ -105,7 +105,8 @@ Advanced and not so advanced development features and examples of support.
 # Visual programming
  - [Meemo: Image pipe visualization](http://meemoo.org/iframework/#gist/3124854) Useful for image/animation construction. Especially filter applications. And creating music.
 
-
 # WebGL GLSL JS Libs
  - [Advanced (full 3D scene) library GLGE](http://www.glge.org/)
  - [Easy 2D fragment shader library GLSL.js](http://greweb.me/glsl.js/examples/)
+ - [JSBin GLSL experiment](http://jsbin.com/aCEcohi/52/edit)
+ - [GLSL collaborative sandbox](http://glsl.heroku.com)
