@@ -107,9 +107,9 @@ set showcmd
 filetype indent on   " per file indent
 set autoindent       " new line starts indented
 set smartindent      " see help
-set tabstop=4        " display width for old tab characters
-set shiftwidth=4     " new tabs 
-set softtabstop=4    " how many spaces for tab key press
+set tabstop=2        " display width for old tab characters
+set shiftwidth=2     " new tabs 
+set softtabstop=2    " how many spaces for tab key press
 set expandtab        " always replace tab key with spaces
                      " if not set 2xtab makes one tab char
 autocmd BufNewFile,BufRead Makefile,Makefile.in,Makefile.am set noexpandtab
