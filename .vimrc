@@ -13,10 +13,10 @@ endif
 
 " vim package manager vundle
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 
-Bundle 'gmarik/vundle'
+"Bundle 'gmarik/vundle'
 
 " set rtp+=~/.vim/bundle/neobundle.vim/
 " call neobundle#rc(expand('~/.vim/bundle/'))
