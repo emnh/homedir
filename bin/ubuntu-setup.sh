@@ -3,6 +3,7 @@
 # Setup settings
 JAVA8=false
 IDEA=false
+CDEV=false
 
 # Set up home dir git repo
 if [ ! -x ~/.bash_zsh_rc ]; then
@@ -11,7 +12,11 @@ if [ ! -x ~/.bash_zsh_rc ]; then
 fi
 
 # Essential packages
-sudo aptitude install chromium-browser vim zsh exuberant-ctags
+sudo aptitude install chromium-browser vim zsh exuberant-ctags geeqie
+
+if $CDEV; then
+  sudo aptitude install build-essential
+fi
 
 # Change shell to zsh
 [ -x /usr/bin/zsh ] && 
