@@ -1,7 +1,7 @@
 # Project ideas
 
 ## Polyglobetrotter
- - Heroku maximum polyglot template: C, Java, C#, F#, Clojure, Python.
+ - Heroku maximum polyglot template: C, Java, C#, F#, Clojure, Python. Haxe language cross-compiles to C++, Java, C#, Python.
  - Front page showing unit test results.
    - Calling from one language to another, using various cross-language boundaries.
    - Sharing/converting data.
@@ -26,7 +26,7 @@ Advanced and not so advanced development features and examples of support.
 
 - Functional style
  - Map, filter, iter
- - Support: Any lisp, Java 8, Python 3, C#
+ - Support: Any lisp, Java 8, Python 3, C#, [Haxe](http://haxe.org/)
 - Closures, lambda
  - Support: Clojure, Java 8, C#, JavaScript
 - Debugging snapshots and reverse exploration
