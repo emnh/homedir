@@ -9,6 +9,7 @@ CDEV=false
 if [ ! -x ~/.bash_zsh_rc ]; then
   git clone https://github.com/emnh/homedir homedir
   mv `ls -1A homedir` .
+  git submodule update --init
 fi
 
 # Essential packages
