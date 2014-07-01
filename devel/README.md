@@ -1,3 +1,23 @@
+# Language Interests
+ - Functional: OCaml (1996), Haskell (1990), F# (2005), Egison (2014?) 
+ - OOP: Java (1995), C# (2000)
+ - OOP lift: Scala (2003), Haxe (2006)
+ - Dynamic: Python (1991), Lua (1993), JavaScript (1995), Clojure (2007), CoffeeScript (2009), ClojureScript (2011)
+ - Systems: C++ (1983), Go (2009), D (2000), Rust (2010)
+
+## Features
+ - Concurrency: Scala (Actors), Go / Rust (Channels), Clojure (STM + Agents)
+ - Generators / coroutines
+  - Python (Generators)
+  - C++ Boost (Coroutines)
+  - Lua (Coroutines)
+  - F# (Sequence Comprehensions)
+  - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Generators) (new in 1.7, poor browser support)
+ - Addon projects
+  - [JavaScript V8 Coroutine Patch](http://code.google.com/p/js-coroutine/)
+  - [Haxe CPS Macro](https://github.com/Atry/haxe-continuation)
+
+
 # Project ideas
 
 ## Polyglobetrotter
