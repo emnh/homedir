@@ -50,6 +50,7 @@ Advanced and not so advanced development features and examples of support.
  - Clojure
  - Scala
  - Haskell
+ - [C++ library](https://github.com/chaelim/HAMT)
  - [Java library](https://github.com/krukow/clj-ds)
  - [JavaScript library](http://swannodette.github.io/mori/)
 - Indentation based syntax
