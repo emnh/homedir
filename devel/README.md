@@ -1,9 +1,9 @@
 # Language Interests
  - Functional: OCaml (1996), Haskell (1990), F# (2005), Egison (2014?) 
  - OOP: Java (1995), C# (2000)
- - OOP lift: Scala (2003), Haxe (2006)
+ - OOP lift: Scala (2003), Nemerle (2003), Haxe (2006)
  - Dynamic: Python (1991), Lua (1993), JavaScript (1995), Clojure (2007), CoffeeScript (2009), ClojureScript (2011)
- - Systems: C++ (1983), Go (2009), D (2000), Rust (2010)
+ - Systems: C++ (1983), Go (2009), D (2000), Nimrod (2008), Rust (2010)
 
 # Project ideas
 
@@ -31,6 +31,11 @@ GitHub centric JSBin: Split screen 2 ways, one IFrame for GitHub and one for htt
 
 Advanced and not so advanced development features and examples of support.
 
+- Macro support
+ - Scala (experimental)
+ - Nimrod
+ - Nemerle
+ - Haxe
 - Concurrency: Scala (Actors), Go / Rust (Channels), Clojure (STM + Agents)
 - Generators / coroutines
  - Python (Generators)
@@ -41,6 +46,10 @@ Advanced and not so advanced development features and examples of support.
 - Coroutine addon projects
  - [JavaScript V8 Coroutine Patch](http://code.google.com/p/js-coroutine/)
  - [Haxe CPS Macro](https://github.com/Atry/haxe-continuation)
+- Indentation based syntax
+ - Python
+ - Nimrod
+ - CoffeeScript
 - Functional/stream style
  - Map, filter, iter etc
  - Support: Clojure, Java 8, Python 3, C#, [Haxe](http://haxe.org/)
