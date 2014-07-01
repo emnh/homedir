@@ -46,6 +46,12 @@ Advanced and not so advanced development features and examples of support.
 - Coroutine addon projects
  - [JavaScript V8 Coroutine Patch](http://code.google.com/p/js-coroutine/)
  - [Haxe CPS Macro](https://github.com/Atry/haxe-continuation)
+- Performant Persistent Immutable Data Structures
+ - Clojure
+ - Scala
+ - Haskell
+ - [Java library](https://github.com/krukow/clj-ds)
+ - [JavaScript library](http://swannodette.github.io/mori/)
 - Indentation based syntax
  - Python
  - Nimrod
@@ -54,7 +60,7 @@ Advanced and not so advanced development features and examples of support.
  - Map, filter, iter etc
  - Support: Clojure, Java 8, Python 3, C#, [Haxe](http://haxe.org/)
 - Closures, lambda
- - Support: Clojure, Java 8, C#, JavaScript
+ - Support: Most modern languages. Clojure, Java 8, C#, JavaScript, Rust, C++11.
 - Debugging snapshots and reverse exploration
  - Support: [GDB checkpoint](https://sourceware.org/gdb/onlinedocs/gdb/Checkpoint_002fRestart.html)
  - Support: [GDB reverse exploration](http://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)
