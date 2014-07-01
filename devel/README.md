@@ -5,19 +5,6 @@
  - Dynamic: Python (1991), Lua (1993), JavaScript (1995), Clojure (2007), CoffeeScript (2009), ClojureScript (2011)
  - Systems: C++ (1983), Go (2009), D (2000), Rust (2010)
 
-## Features
- - Concurrency: Scala (Actors), Go / Rust (Channels), Clojure (STM + Agents)
- - Generators / coroutines
-  - Python (Generators)
-  - C++ Boost (Coroutines)
-  - Lua (Coroutines)
-  - F# (Sequence Comprehensions)
-  - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Generators) (new in 1.7, poor browser support)
- - Addon projects
-  - [JavaScript V8 Coroutine Patch](http://code.google.com/p/js-coroutine/)
-  - [Haxe CPS Macro](https://github.com/Atry/haxe-continuation)
-
-
 # Project ideas
 
 ## Polyglobetrotter
@@ -44,9 +31,19 @@ GitHub centric JSBin: Split screen 2 ways, one IFrame for GitHub and one for htt
 
 Advanced and not so advanced development features and examples of support.
 
-- Functional style
- - Map, filter, iter
- - Support: Any lisp, Java 8, Python 3, C#, [Haxe](http://haxe.org/)
+- Concurrency: Scala (Actors), Go / Rust (Channels), Clojure (STM + Agents)
+- Generators / coroutines
+ - Python (Generators)
+ - C++ Boost (Coroutines)
+ - Lua (Coroutines)
+ - F# (Sequence Comprehensions)
+ - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Generators) (new in 1.7, poor browser support)
+- Coroutine addon projects
+ - [JavaScript V8 Coroutine Patch](http://code.google.com/p/js-coroutine/)
+ - [Haxe CPS Macro](https://github.com/Atry/haxe-continuation)
+- Functional/stream style
+ - Map, filter, iter etc
+ - Support: Clojure, Java 8, Python 3, C#, [Haxe](http://haxe.org/)
 - Closures, lambda
  - Support: Clojure, Java 8, C#, JavaScript
 - Debugging snapshots and reverse exploration
