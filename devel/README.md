@@ -46,7 +46,7 @@ Advanced and not so advanced development features and examples of support.
 - Coroutine addon projects
  - [JavaScript V8 Coroutine Patch](http://code.google.com/p/js-coroutine/)
  - [Haxe CPS Macro](https://github.com/Atry/haxe-continuation)
-- Performant Persistent Immutable Data Structures
+- Performant Persistent Immutable Data Structure, e.g. [HAMT](http://en.wikipedia.org/wiki/Hash_array_mapped_trie)
  - Clojure
  - Scala
  - Haskell
