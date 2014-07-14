@@ -8,6 +8,7 @@
 # Project ideas
 
 ## Polyglobetrotter
+ - [PolyGlot Project](https://github.com/sausheong/polyglot)
  - Heroku maximum polyglot template: C, Java, C#, F#, Clojure, Python. Haxe language cross-compiles to C++, Java, C#, Python.
  - Front page showing unit test results.
    - Calling from one language to another, using various cross-language boundaries.
