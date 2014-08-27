@@ -12,4 +12,4 @@
 	browser = firefox
 	port = 6819
 [push]
-	default = simple
+	default = matching
