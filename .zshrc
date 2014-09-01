@@ -19,6 +19,7 @@ mkdir -p ~/.zsh
 HISTFILE=~/.zsh/history
 HISTSIZE=10000000
 SAVEHIST=10000000
+watch=()
 setopt sharehistory
 setopt appendhistory autocd notify
 setopt autopushd
