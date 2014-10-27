@@ -5,10 +5,14 @@ JAVA8=false
 IDEA=false
 CDEV=false
 
+cd ~
+
 # Set up home dir git repo
 if [ ! -x ~/.bash_zsh_rc ]; then
   git clone https://github.com/emnh/homedir homedir
-  mv `ls -1A homedir` .
+  for file in `ls -1A homedir`; do
+    mv homedir/$file ~/
+  done
   git submodule update --init
 fi
 
