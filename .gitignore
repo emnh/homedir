@@ -385,7 +385,6 @@
 /usr
 
 # alexis home dir
-django
-done
-torrents
-urldb.sq3
+/htpasswd
+/login.uib.no
+/backup
