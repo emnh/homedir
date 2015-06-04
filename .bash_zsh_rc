@@ -2,6 +2,7 @@
 # vim: set filetype=zsh
 # 
 [[ $PATH != *$HOME/bin:* ]] && PATH=$HOME/bin:$PATH
+[[ $PATH != *$HOME/usr/bin:* ]] && PATH=$HOME/usr/bin:$PATH
 [[ $PATH != *:/sbin* ]] && PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
 [[ $PATH != *:/usr/local/bin* ]] && PATH=$PATH:/usr/local/bin
 [[ $PATH != *:/media/data/software/golang/bin/* ]] && PATH=$PATH:/media/data/software/golang/bin
