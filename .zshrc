@@ -1,5 +1,6 @@
+# vim: set filetype=zsh
 
-# on top so it can be overridden
+# at top so it can be overridden
 source ~/.zshrc-grml
 
 # The following lines were added by compinstall
@@ -16,9 +17,11 @@ compinit
 # End of lines added by compinstall
 
 mkdir -p ~/.zsh
-HISTFILE=~/.zsh/history
-HISTSIZE=10000000
-SAVEHIST=10000000
+export \
+  HISTFILE=~/.zsh/history \
+  HISTSIZE=10000000 \
+  SAVEHIST=10000000 \
+  PS1="%{%}%(?..%?%1v )%{%}%n%{%}@%m %40<...<%B%~%b%<< %j%# "
 watch=()
 setopt sharehistory
 setopt appendhistory autocd notify

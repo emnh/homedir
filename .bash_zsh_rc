@@ -1,5 +1,5 @@
 #!/bin/bash
-# vim: set filetype=zsh
+# vim: set filetype=bash
 # 
 [[ $PATH != *$HOME/bin:* ]] && PATH=$HOME/bin:$PATH
 [[ $PATH != *$HOME/usr/bin:* ]] && PATH=$HOME/usr/bin:$PATH
@@ -39,9 +39,7 @@ TZ='Europe/Oslo' \
 CHROMIUM_USER_FLAGS="--enable-sync --enable-extensions --always-enable-dev-tools" \
 DJANGO_SETTINGS_MODULE=lifelog.settings \
 HOSTNAME=$HOST \
-CTAGS=--langmap=lisp:+.clj \
-PS1="%{%}%(?..%?%1v )%{%}%n%{%}@%m %40<...<%B%~%b%<< %j%# "
-#LD_ASSUME_KERNEL=2.4.1 # MATLAB workaround, gives trouble on fedora
+CTAGS=--langmap=lisp:+.clj
 
 locale=en_US.UTF-8
 export LANG="$locale" \
