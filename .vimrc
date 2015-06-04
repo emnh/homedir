@@ -41,9 +41,9 @@ if !exists("autocommands_loaded")
     au BufNewFile,BufRead *.txt set filetype=text
     au BufNewFile,BufRead *.go set filetype=go
 
-    au BufNewFile,BufRead *.py TagbarOpen
-    au BufNewFile,BufRead *.java TagbarOpen
-    au BufNewFile,BufRead *.clj TagbarOpen
+    au BufNewFile,BufRead *.py if exists(":TagbarOpen")| TagbarOpen | endif
+    au BufNewFile,BufRead *.java if exists(":TagbarOpen")| TagbarOpen | endif
+    au BufNewFile,BufRead *.clj if exists(":TagbarOpen")| TagbarOpen | endif
 endif
 
 if has("python")
