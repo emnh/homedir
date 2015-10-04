@@ -165,7 +165,7 @@ endif
 " vimclojure
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
-let vimclojure#WantNailgun = 1
+let vimclojure#WantNailgun = 0
 let vimclojure#SplitPos = "right" 
 
 " from http://statico.github.io/vim.html
