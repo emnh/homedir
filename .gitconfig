@@ -13,3 +13,5 @@
 	port = 6819
 [push]
 	default = matching
+[credential]
+	helper = cache
