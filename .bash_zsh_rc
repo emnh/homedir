@@ -79,6 +79,9 @@ fi
 
 ##### ALIASES #####
 
+alias grep="grep $GREP_OPTIONS"
+alias fgrep="fgrep $GREP_OPTIONS"
+unset GREP_OPTIONS
 alias ls="ls $LSCOLOR -xCF"
 alias vt='openvt -s -l -- /bin/bash --login'
 alias less='less -isR'
