@@ -388,3 +388,13 @@
 /htpasswd
 /login.uib.no
 /backup
+
+# rainmaker home dir
+/.dbshell
+/.links2/
+/.mongorc.js
+/.node-gyp/
+/.node_repl_history
+/.oracle_jre_usage/
+/foreign/
+/non-github/
