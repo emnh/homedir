@@ -144,10 +144,18 @@ if &filetype != "java" | let g:EclimDisabled=1 | endif
 " imap <Down> <C-O>gj
 
 "map <F4> :source ~/devel/muttvi/muttvi.vim<CR>
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
 if &t_Co == 256
-    colorscheme inkpot
+  set bg=dark
+  colorscheme inkpot
+  "colorscheme default
+else
+  colorscheme default
 endif
+
+" Show trailing whitespace:
+:match ExtraWhitespace /\s\+$/
 
 "let xterm16_brightness='high'
 "let xterm16_colormap='soft'
