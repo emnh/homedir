@@ -210,4 +210,4 @@ let tlist_clojure_settings = 'lisp;f:function'
 :let g:ctrlp_dotfiles = 0
 :let g:ctrlp_switch_buffer = 0
 
-let g:syntastic_cpp_compiler_options = "-std=c++0x"
+let g:syntastic_cpp_compiler_options = "-std=c++11"
