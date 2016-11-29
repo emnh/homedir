@@ -53,3 +53,8 @@ vcs_info_wrapper() {
 RPROMPT=$'$(vcs_info_wrapper)'
 
 source ~/.bash_zsh_rc
+
+if [ -d "/usr/local/heroku/bin" ]; then
+  ### Added by the Heroku Toolbelt
+  export PATH="/usr/local/heroku/bin:$PATH"
+fi
