@@ -44,6 +44,8 @@
 /_viminfo
 # tcsh?
 /.history
+/.python_history
+/.lein_history
 
 # SSH
 # Config should be symlinked to dropbox.
@@ -398,3 +400,11 @@
 /.oracle_jre_usage/
 /foreign/
 /non-github/
+/.rts
+/.FFDec/
+/.v8flags.4.6.85.31.emh.json
+/.wget-hsts
+/emhvidev-login.uio.no/
+
+# Symlink to .vim
+/.nvim
