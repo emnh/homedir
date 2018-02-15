@@ -9,6 +9,10 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
       set t_Co=256
 endif
 
+if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
+  set termguicolors
+endif
+
 " many good tips from http://statico.github.io/vim.html
 
 " vim package manager vundle
@@ -28,8 +32,25 @@ endif
 " enables bundles in .vim/bundle
 execute pathogen#infect()
 
-" Powerline status line
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+if has("nvim")
+  call plug#begin('~/.local/share/nvim/plugged')
+
+  Plug 'reasonml-editor/vim-reason-plus'
+  Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+  "Plug 'autozimu/LanguageClient-neovim', {
+  "    \ 'branch': 'next',
+  "    \ 'do': 'bash install.sh',
+  "    \ }
+
+  " (Optional) Multi-entry selection UI.
+  Plug 'junegunn/fzf'
+
+  " (Completion plugin option 1)
+  Plug 'roxma/nvim-completion-manager'
+else
+  " Powerline status line
+  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+endif
 
 " examples
 abbr myabbr expanded text
@@ -134,24 +155,18 @@ let g:pydiction_location='~/.vim/data/pydictionary/complete-dict'
 if &filetype != "java" | let g:EclimDisabled=1 | endif
 "EclimDisable
 
-" kongereglar for paragraftekst
-"
-" set textwidth=0
-" set linebreak
-" map <Up> gk
-" map <Down> gj
-" imap <Up> <C-O>gk
-" imap <Down> <C-O>gj
-
 "map <F4> :source ~/devel/muttvi/muttvi.vim<CR>
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
-if &t_Co == 256
-  set bg=dark
-  colorscheme inkpot
-  "colorscheme default
+if has("nvim")
+  colorscheme fresh
 else
-  colorscheme default
+  if &t_Co == 256
+    set bg=dark
+    colorscheme inkpot
+  else
+    colorscheme default
+  endif
 endif
 
 " Show trailing whitespace:
@@ -174,7 +189,7 @@ endif
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let vimclojure#WantNailgun = 0
-let vimclojure#SplitPos = "right" 
+let vimclojure#SplitPos = "right"
 
 " from http://statico.github.io/vim.html
 " Regarding Vim’s command line, its defaults make it behave very unlike a
@@ -211,3 +226,29 @@ let tlist_clojure_settings = 'lisp;f:function'
 :let g:ctrlp_switch_buffer = 0
 
 let g:syntastic_cpp_compiler_options = "-std=c++11"
+
+" ReasonML config
+
+" Required for operations modifying multiple buffers like rename.
+if has("nvim")
+  set hidden
+
+  let g:LanguageClient_serverCommands = {
+      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+      \ 'javascript': ['/opt/javascript-typescript-langserver/lib/language-server-stdio.js'],
+      \ 'reason': ['ocaml-language-server', '--stdio'],
+      \ 'ocaml': ['ocaml-language-server', '--stdio'],
+      \ }
+
+  " Automatically start language servers.
+  let g:LanguageClient_autoStart = 1
+
+  nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+  nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+  nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+  nnoremap <silent> gf :call LanguageClient_textDocument_formatting()<cr>
+  nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
+endif
+
+set timeoutlen=1000 ttimeoutlen=0
+set number
