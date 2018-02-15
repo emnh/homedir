@@ -31,6 +31,7 @@ endif
 " https://github.com/tpope/vim-pathogen
 " enables bundles in .vim/bundle
 execute pathogen#infect()
+"execute pathogen#infect('.local/share/nvim/plugged/{}')
 
 if has("nvim")
   call plug#begin('~/.local/share/nvim/plugged')
@@ -47,6 +48,10 @@ if has("nvim")
 
   " (Completion plugin option 1)
   Plug 'roxma/nvim-completion-manager'
+
+  Plug 'roxma/vim-hug-neovim-rpc'
+
+  Plug 'roxma/nvim-yarp'
 else
   " Powerline status line
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
