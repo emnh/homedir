@@ -47,11 +47,15 @@ if has("nvim")
   Plug 'junegunn/fzf'
 
   " (Completion plugin option 1)
-  Plug 'roxma/nvim-completion-manager'
+  Plug 'ncm2/ncm2'
 
   Plug 'roxma/vim-hug-neovim-rpc'
 
   Plug 'roxma/nvim-yarp'
+
+  Plug 'Valloric/YouCompleteMe'
+
+  call plug#end()
 else
   " Powerline status line
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -83,7 +87,7 @@ endif
 map <F2> : read !echo -n " -- Eivind Magnus Hvidevold <hvidevold@gmail.com>  "; date -R <CR>
 map <F3> : nohlsearch <CR>
 map <F5> : w! <CR> : make <CR>
-imap <F5> <ESC> <F5> 
+imap <F5> <ESC> <F5>
 "map <F5> : ! nc -w1 192.168.126.9 12345 <CR> u
 "map <F6> : r ! nc -l -p 12345 <CR>
 
