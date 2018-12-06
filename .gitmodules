@@ -14,9 +14,6 @@
 [submodule ".vim/bundle/python-syntax"]
 	path = .vim/bundle/python-syntax
 	url = https://github.com/hdima/python-syntax
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/bundle/SimpylFold"]
 	path = .vim/bundle/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold.git
@@ -53,9 +50,6 @@
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule ".vim/bundle/autocomplpop"]
-	path = .vim/bundle/autocomplpop
-	url = https://github.com/vim-scripts/AutoComplPop
 [submodule ".vim/bundle/vim-glsl"]
 	path = .vim/bundle/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl
