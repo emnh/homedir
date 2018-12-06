@@ -405,6 +405,16 @@
 /.v8flags.4.6.85.31.emh.json
 /.wget-hsts
 /emhvidev-login.uio.no/
+/.cmg/
+/.emscripten
+/.emscripten_cache.lock
+/.emscripten_cache/
+/.emscripten_ports/
+/.emscripten_sanity
+/.ocamlinit
+/.opam/
+/bucklescript/
+/ocaml/
 
 # Symlink to .vim
 /.nvim
