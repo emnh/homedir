@@ -47,11 +47,15 @@ if has("nvim")
   Plug 'junegunn/fzf'
 
   " (Completion plugin option 1)
-  Plug 'ncm2/ncm2'
+  " Plug 'ncm2/ncm2'
+
+  Plug 'vim-syntastic/syntastic'
 
   Plug 'roxma/vim-hug-neovim-rpc'
 
   Plug 'roxma/nvim-yarp'
+
+  " Plug 'zxqfl/tabnine-vim'
 
   Plug 'Valloric/YouCompleteMe'
 
