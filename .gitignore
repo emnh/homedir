@@ -415,6 +415,7 @@
 /.opam/
 /bucklescript/
 /ocaml/
+/.julia/
 
 # Symlink to .vim
 /.nvim
