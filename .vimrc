@@ -37,11 +37,11 @@ if has("nvim")
   call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'reasonml-editor/vim-reason-plus'
-  Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
-  "Plug 'autozimu/LanguageClient-neovim', {
-  "    \ 'branch': 'next',
-  "    \ 'do': 'bash install.sh',
-  "    \ }
+  "Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
 
   " (Optional) Multi-entry selection UI.
   Plug 'junegunn/fzf'
@@ -57,7 +57,9 @@ if has("nvim")
 
   " Plug 'zxqfl/tabnine-vim'
 
-  Plug 'Valloric/YouCompleteMe'
+  " Plug 'Valloric/YouCompleteMe'
+
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
   call plug#end()
 else
@@ -249,7 +251,7 @@ if has("nvim")
   let g:LanguageClient_serverCommands = {
       \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
       \ 'javascript': ['/opt/javascript-typescript-langserver/lib/language-server-stdio.js'],
-      \ 'reason': ['ocaml-language-server', '--stdio'],
+      \ 'reason': ['reason-language-server.exe' ],
       \ 'ocaml': ['ocaml-language-server', '--stdio'],
       \ }
 
