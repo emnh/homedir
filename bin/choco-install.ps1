@@ -91,6 +91,7 @@ choco install winscp.install
 #choco install smartmontools
 #choco install spotify
 #choco install steam
+#choco install synergy
 #choco install teamviewer.host
 #choco install tightvnc
 #choco install trid
