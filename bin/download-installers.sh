@@ -1,4 +1,5 @@
 #!/bin/bash
+# deprecated. use chocolatey package manager for windows
 mkdir -p /mnt/c/Users/emh/Downloads/installers
 cd /mnt/c/Users/emh/Downloads/installers
 wget -c https://atom.io/download/windows_x64 -O atom.exe
