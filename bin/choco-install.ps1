@@ -3,7 +3,6 @@ choco feature enable -n allowGlobalConfirmation
 # base default install
 choco install 7zip.install
 choco install atom
-choco install avgantivirusfree
 choco install cyg-get
 choco install cygwin
 choco install directx
