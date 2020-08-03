@@ -1,3 +1,7 @@
+" TODO:
+" Check out https://medium.com/life-at-moka/step-up-your-game-with-neovim-62ba814166d7 and corresponding
+" https://github.com/greekrode/nvim-config/blob/master/init.vim and integrate it.
+
 " temporary
 "if &term == "xterm-color"
 "set t_kb=
