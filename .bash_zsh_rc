@@ -95,4 +95,4 @@ alias r2e='cd ~/.rss2email/; r2e'
 alias konsolekalendar='konsolekalendar --file ~/.calendar.ics'
 alias vi=vim
 alias 'ps?'='ps ax | grep '
-alias sumstdin="python3 -c 'import sys; print(sum([int(x) for x in sys.stdin.readlines()]))'"
+alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
