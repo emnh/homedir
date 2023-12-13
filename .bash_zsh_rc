@@ -96,3 +96,4 @@ alias konsolekalendar='konsolekalendar --file ~/.calendar.ics'
 alias vi=vim
 alias 'ps?'='ps ax | grep '
 alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
+alias getaudiolength="ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1"
