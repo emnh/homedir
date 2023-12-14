@@ -80,7 +80,7 @@ fi
 ##### FUNCTIONS #####
 
 function getaudiolength {
-  ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $1
+  ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$1"
 }
 
 function secondsToHoursMinutesAndSeconds {
@@ -88,7 +88,7 @@ function secondsToHoursMinutesAndSeconds {
 }
 
 function getavlength {
-  length=$(getaudiolength $1)
+  length=$(getaudiolength "$1")
   formatted=$(echo -n "$length" | cut -f1 -d. | secondsToHoursMinutesAndSeconds)
   echo $length $formatted
 }
