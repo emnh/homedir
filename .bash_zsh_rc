@@ -77,6 +77,22 @@ if [ -x /usr/bin/dircolors ]; then
     #fi
 fi
 
+##### FUNCTIONS #####
+
+function getaudiolength {
+  ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $1
+}
+
+function secondsToHoursMinutesAndSeconds {
+  python -c 's=int(input());print("{:02}:{:02}:{:02}".format(s // 3600, (s // 60) % 60, s % 60))'
+}
+
+function getavlength {
+  length=$(getaudiolength $1)
+  formatted=$(echo -n "$length" | cut -f1 -d. | secondsToHoursMinutesAndSeconds)
+  echo $length $formatted
+}
+
 ##### ALIASES #####
 
 alias grep="grep $GREP_OPTIONS"
@@ -96,4 +112,3 @@ alias konsolekalendar='konsolekalendar --file ~/.calendar.ics'
 alias vi=vim
 alias 'ps?'='ps ax | grep '
 alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
-alias getavlength="ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1"
