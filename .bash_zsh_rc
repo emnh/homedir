@@ -113,3 +113,45 @@ alias konsolekalendar='konsolekalendar --file ~/.calendar.ics'
 alias vi=vim
 alias 'ps?'='ps ax | grep '
 alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
+alias psc='ps u -C'
+
+##### RUN EVERYTHING IN TMUX #####
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    # tmux && exit
+
+    # Check if "defaultsession" exists
+    if tmux has-session -t defaultsession 2>/dev/null; then
+        # Create a new window in the "defaultsession"
+        tmux new-window -t defaultsession
+
+        # Run your commands here, for example:
+        # tmux send-keys -t defaultsession "echo 'Hello, new tmux window!'" C-m
+    else
+        # Start a new tmux session named "defaultsession" if it doesn't exist
+        tmux new-session -d -s defaultsession
+
+        # Run your commands here, for example:
+        # tmux send-keys -t defaultsession "echo 'Hello, tmux!'" C-m
+    fi
+
+    # Attach to the "defaultsession"
+    tmux attach -t defaultsession && exit
+elif [ -z "$TMUX" ]; then
+    echo "Missing tmux! Please install!"
+fi
+
+# Check if inside TMUX
+if [ ! -z "$TMUX" ]; then
+    # Function to run when the tmux window is closed
+    cleanup_tmux() {
+        # Check if there are background jobs before attempting to kill them
+        if [ -n "$(jobs -p)" ]; then
+            kill $(jobs -p)
+        fi
+    }
+
+    # Set the trap to run the cleanup function when the shell exits or a tmux window is closed
+    trap cleanup_tmux EXIT
+    trap cleanup_tmux INT
+    trap cleanup_tmux TERM
+fi
