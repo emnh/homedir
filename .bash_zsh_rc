@@ -154,17 +154,11 @@ if [ ! -z "$TMUX" ]; then
         if [ -n "$(jobs -p)" ]; then
             kill $(jobs -p)
         fi
+        tmux detach-client
     }
 
     # Set the trap to run the cleanup function when the shell exits or a tmux window is closed
     trap cleanup_tmux EXIT
     trap cleanup_tmux INT
     trap cleanup_tmux TERM
-
-    if [ -n "$BASH_VERSION" ]; then
-        bind -x '"\C-d": tmux detach-client && exit'
-    fi
-    if [ -n "$ZSH_VERSION" ]; then
-        bindkey '^D' 'tmux detach-client && exit'
-    fi
 fi
