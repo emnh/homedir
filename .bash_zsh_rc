@@ -141,7 +141,8 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
         # Run your commands here if needed
         # tmux send-keys -t $SESSION_NAME "echo 'Hello, tmux!'" C-m
     fi
-    tmux attach -t $SESSION_NAME && exit
+    # tmux attach -t $SESSION_NAME && exit
+    exec tmux attach -t $SESSION_NAME
 elif [ -z "$TMUX" ]; then
     echo "Missing tmux! Please install!"
 fi
@@ -157,6 +158,6 @@ if [ ! -z "$TMUX" ]; then
     }
 
     trap cleanup_tmux EXIT
-    trap cleanup_tmux INT
+    #trap cleanup_tmux INT
     trap cleanup_tmux TERM
 fi
