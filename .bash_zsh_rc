@@ -1,5 +1,5 @@
 #!/bin/bash
-# vim: set filetype=bash
+# vim: set filetype=bash ts=4 sw=4 sts=4 et
 
 [[ $PATH != *$HOME/bin:* ]] && PATH=$HOME/bin:$PATH
 [[ $PATH != *$HOME/usr/bin:* ]] && PATH=$HOME/usr/bin:$PATH
@@ -161,5 +161,10 @@ if [ ! -z "$TMUX" ]; then
     trap cleanup_tmux INT
     trap cleanup_tmux TERM
 
-    bindkey '^D' tmux detach-client && exit
+    if [ -n "$BASH_VERSION" ]; then
+        bind -x '"\C-d": tmux detach-client && exit'
+    fi
+    if [ -n "$ZSH_VERSION" ]; then
+        bindkey '^D' 'tmux detach-client && exit'
+    fi
 fi
