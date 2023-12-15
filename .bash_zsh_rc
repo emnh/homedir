@@ -1,6 +1,6 @@
 #!/bin/bash
 # vim: set filetype=bash
-# 
+
 [[ $PATH != *$HOME/bin:* ]] && PATH=$HOME/bin:$PATH
 [[ $PATH != *$HOME/usr/bin:* ]] && PATH=$HOME/usr/bin:$PATH
 [[ $PATH != *:/sbin* ]] && PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
@@ -12,7 +12,7 @@
 [[ $PYTHONPATH != *$HOME/devel* ]] && PYTHONPATH=$PYTHONPATH:~/devel
 [[ $PYTHONPATH != *$HOME/devel/nmuse* ]] && PYTHONPATH=$PYTHONPATH:~/devel/nmuse
 
-export PATH PYTHONPATH 
+export PATH PYTHONPATH
 
 if [[ $TERM = "xterm" ]] && /usr/bin/env | fgrep -q KONSOLE; then
     export TERM=xterm-256color
