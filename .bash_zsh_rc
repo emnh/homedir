@@ -1,5 +1,5 @@
 #!/bin/bash
-# vim: set filetype=bash ts=4 sw=4 sts=4 et
+# vim: ft=bash ts=4 sw=4 sts=4 et
 
 [[ $PATH != *$HOME/bin:* ]] && PATH=$HOME/bin:$PATH
 [[ $PATH != *$HOME/usr/bin:* ]] && PATH=$HOME/usr/bin:$PATH
@@ -122,26 +122,21 @@ alias 'ps?'='ps ax | grep '
 alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
 
 ##### RUN EVERYTHING IN TMUX #####
+# Generate a unique session name based on terminal PID
+SESSION_NAME="session$$"
+
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    # tmux && exit
-
-    # Check if "defaultsession" exists
-    if tmux has-session -t defaultsession 2>/dev/null; then
-        # Create a new window in the "defaultsession"
-        tmux -2 new-window -t defaultsession
-
-        # Run your commands here, for example:
-        # tmux send-keys -t defaultsession "echo 'Hello, new tmux window!'" C-m
+    # Check if the session already exists
+    if tmux has-session -t $SESSION_NAME 2>/dev/null; then
+        tmux attach -t $SESSION_NAME
     else
-        # Start a new tmux session named "defaultsession" if it doesn't exist
-        tmux -2 new-session -d -s defaultsession
+        # Create a new tmux session with the generated name
+        tmux new-session -d -s $SESSION_NAME
 
-        # Run your commands here, for example:
-        # tmux send-keys -t defaultsession "echo 'Hello, tmux!'" C-m
+        # Run your commands here if needed
+        # tmux send-keys -t $SESSION_NAME "echo 'Hello, tmux!'" C-m
     fi
-
-    # Attach to the "defaultsession"
-    tmux -2 attach -t defaultsession && exit
+    tmux attach -t $SESSION_NAME && exit
 elif [ -z "$TMUX" ]; then
     echo "Missing tmux! Please install!"
 fi
@@ -150,14 +145,12 @@ fi
 if [ ! -z "$TMUX" ]; then
     # Function to run when the tmux window is closed
     cleanup_tmux() {
-        # Check if there are background jobs before attempting to kill them
         if [ -n "$(jobs -p)" ]; then
             kill $(jobs -p)
         fi
         tmux detach-client
     }
 
-    # Set the trap to run the cleanup function when the shell exits or a tmux window is closed
     trap cleanup_tmux EXIT
     trap cleanup_tmux INT
     trap cleanup_tmux TERM
