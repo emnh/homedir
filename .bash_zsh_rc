@@ -160,4 +160,6 @@ if [ ! -z "$TMUX" ]; then
     trap cleanup_tmux EXIT
     trap cleanup_tmux INT
     trap cleanup_tmux TERM
+
+    bindkey '^D' tmux detach-client && exit
 fi
