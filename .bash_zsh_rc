@@ -125,6 +125,7 @@ alias konsolekalendar='konsolekalendar --file ~/.calendar.ics'
 alias vi=vim
 alias 'ps?'='ps ax | grep '
 alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
+alias x='xclip -selection clipboard'
 
 ##### RUN EVERYTHING IN TMUX #####
 # Generate a unique session name based on terminal PID
