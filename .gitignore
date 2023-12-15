@@ -419,3 +419,19 @@
 
 # Symlink to .vim
 /.nvim
+
+# Added legion laptop 15.12.2023
+/.audacity-data
+/Calibre Library
+/.deepface
+/Documents/FS-UAE
+/.ipython
+/.jupyter
+/.keras
+/.nv
+/Pictures
+/.pm2
+/.qmmp
+/snap
+/.soundmeter
+/.uade
