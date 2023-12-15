@@ -101,6 +101,11 @@ function psc {
   fi
 }
 
+function getmem {
+    # For example: getmem chrome
+    smem -t -k -c pss -P $1 | tail -n 1
+}
+
 ##### ALIASES #####
 
 alias grep="grep $GREP_OPTIONS"
