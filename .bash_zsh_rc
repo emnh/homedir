@@ -81,24 +81,32 @@ fi
 ##### FUNCTIONS #####
 
 function getaudiolength {
-  ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$1"
+    ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$1"
 }
 
 function secondsToHoursMinutesAndSeconds {
-  python -c 's=int(input());print("{:02}:{:02}:{:02}".format(s // 3600, (s // 60) % 60, s % 60))'
+    python -c 's=int(input());print("{:02}:{:02}:{:02}".format(s // 3600, (s // 60) % 60, s % 60))'
 }
 
 function getavlength {
-  length=$(getaudiolength "$1")
-  formatted=$(echo -n "$length" | cut -f1 -d. | secondsToHoursMinutesAndSeconds)
-  echo $length $formatted
+    for file in "$@"; do
+        length=$(getaudiolength "$file")
+        if [ -n "$length" ]; then
+            formatted=$(echo -n "$length" | cut -f1 -d. | secondsToHoursMinutesAndSeconds)
+            size=$(stat -c %s "$file")
+            kbps=$(python -c "print(round($size / $length / 1024))")
+            echo $file: $length $formatted "$kbps"kbps
+        else
+            echo $file: error
+        fi
+    done
 }
 
 function psc {
-  pids=`pgrep $1`
-  if [ -n "$pids" ]; then
-    ps $pids
-  fi
+    pids=`pgrep $1`
+    if [ -n "$pids" ]; then
+        ps $pids
+    fi
 }
 
 function getmem {
