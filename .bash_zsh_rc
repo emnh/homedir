@@ -95,7 +95,7 @@ function getavlength {
             formatted=$(echo -n "$length" | cut -f1 -d. | secondsToHoursMinutesAndSeconds)
             size=$(stat -c %s "$file")
             kbps=$(python -c "print(round($size / $length / 1024))")
-            echo $file: $length $formatted "$kbps"kbps
+            echo $file: $length $formatted "$kbps"kBps
         else
             echo $file: error
         fi
