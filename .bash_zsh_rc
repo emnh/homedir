@@ -103,9 +103,9 @@ function getavlength {
 }
 
 function psc {
-    pids=`pgrep $1`
+    pids="$(pgrep $1)"
     if [ -n "$pids" ]; then
-        ps $pids
+        echo $pids | xargs ps
     fi
 }
 
