@@ -114,6 +114,19 @@ function getmem {
     smem -t -k -c pss -P $1 | tail -n 1
 }
 
+function xp {
+    one="$(xclip -o -s p)"
+    two="$(xclip -o -s s)"
+    three="$(xclip -o -s c)"
+    xclip -o -s p
+    if [ "$two" != "$one" ]; then
+        xclip -o -s s
+    fi
+    if [ "$three" != "$one" ]; then
+        xclip -o -s c
+    fi
+}
+
 ##### ALIASES #####
 
 alias grep="grep $GREP_OPTIONS"
