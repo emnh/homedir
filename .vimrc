@@ -83,7 +83,7 @@ if !exists("autocommands_loaded")
     au BufNewFile,BufRead *.txt set filetype=text
     au BufNewFile,BufRead *.go set filetype=go
 
-    au BufNewFile,BufRead *.py if exists(":TagbarOpen")| TagbarOpen | endif
+    "au BufNewFile,BufRead *.py if exists(":TagbarOpen")| TagbarOpen | endif
     au BufNewFile,BufRead *.java if exists(":TagbarOpen")| TagbarOpen | endif
     au BufNewFile,BufRead *.clj if exists(":TagbarOpen")| TagbarOpen | endif
 endif
@@ -273,3 +273,4 @@ endif
 
 set timeoutlen=1000 ttimeoutlen=0
 set number
+set foldlevel=100
