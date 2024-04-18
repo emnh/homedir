@@ -85,7 +85,7 @@ function getaudiolength {
 }
 
 function secondsToHoursMinutesAndSeconds {
-    python -c 's=int(input());print("{:02}:{:02}:{:02}".format(s // 3600, (s // 60) % 60, s % 60))'
+    python3 -c 's=int(input());print("{:02}:{:02}:{:02}".format(s // 3600, (s // 60) % 60, s % 60))'
 }
 
 function getavlength {
@@ -97,7 +97,7 @@ function getavlength {
             total_length=$(($total_length + $int_length))
             formatted=$(echo $int_length | secondsToHoursMinutesAndSeconds)
             size=$(stat -c %s "$file")
-            kbps=$(python -c "print(round($size / $length / 1024))")
+            kbps=$(python3 -c "print(round($size / $length / 1024))")
             echo $file: $length $formatted "$kbps"kBps
         else
             echo $file: error
