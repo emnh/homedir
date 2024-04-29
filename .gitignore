@@ -435,3 +435,6 @@
 /snap
 /.soundmeter
 /.uade
+
+# WSL
+/.motd_shown
