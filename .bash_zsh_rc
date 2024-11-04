@@ -138,8 +138,8 @@ alias vi=vim
 alias 'ps?'='ps ax | grep '
 alias sumstdin="python3 -c 'import sys; print(sum([float(x) for x in sys.stdin.readlines()]))'"
 alias x='xclip -selection clipboard'
-alias winx='powershell.exe Set-Clipboard'
-alias winxp='powershell.exe Get-Clipboard'
+# alias winx='powershell.exe Set-Clipboard'
+# alias winxp='powershell.exe Get-Clipboard'
 
 ##### RUN EVERYTHING IN TMUX #####
 # Generate a unique session name based on terminal PID
