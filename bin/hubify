@@ -1,0 +1,12 @@
+#!/bin/bash
+# If the user replies with anything except y, the script will exit.
+# Otherwise it will run a command to publish the current directory on github using the gh command.
+
+read -p "Do you want to publish this directory on github? (y/n) " response
+if [ "$response" != "y" ]; then
+  exit
+fi
+
+# Publish the current directory on github
+gh repo create $(basename $(pwd)) --public --source=. --remote=upstream
+git push upstream master
