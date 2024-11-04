@@ -36,10 +36,10 @@ endif
 
 " https://github.com/tpope/vim-pathogen
 " enables bundles in .vim/bundle
-execute pathogen#infect()
-"execute pathogen#infect('.local/share/nvim/plugged/{}')
+" execute pathogen#infect()
+" execute pathogen#infect('.local/share/nvim/plugged/{}')
 
-if has("nvim")
+if has("nvimNOPE")
   call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'reasonml-editor/vim-reason-plus'
