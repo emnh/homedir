@@ -438,3 +438,5 @@
 
 # WSL
 /.motd_shown
+# nvm installer for node
+/.nvm
