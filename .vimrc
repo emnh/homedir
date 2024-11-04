@@ -39,7 +39,7 @@ endif
 " execute pathogen#infect()
 " execute pathogen#infect('.local/share/nvim/plugged/{}')
 
-if has("nvimNOPE")
+if has("nvim")
   call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'reasonml-editor/vim-reason-plus'
@@ -66,6 +66,8 @@ if has("nvimNOPE")
   " Plug 'Valloric/YouCompleteMe'
 
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+  Plug 'github/copilot.vim'
 
   call plug#end()
 else
