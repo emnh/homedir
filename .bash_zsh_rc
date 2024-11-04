@@ -176,7 +176,3 @@ if [ ! -z "$TMUX" ]; then
     #trap cleanup_tmux INT
     trap cleanup_tmux TERM
 fi
-
-:imap <silent> <C-j> <Plug>(copilot-next)
-:imap <silent> <C-k> <Plug>(copilot-previous)
-:imap <silent> <C-\> <Plug>(copilot-dismiss)
