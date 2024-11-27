@@ -441,3 +441,5 @@
 # nvm installer for node
 /.nvm
 /practice-*
+/gh-dev
+/secret
