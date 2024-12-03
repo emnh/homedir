@@ -9,4 +9,4 @@ fi
 
 # Publish the current directory on github
 gh repo create $(basename $(pwd)) --public --source=. --remote=upstream
-git push upstream master
+git push -u upstream master
